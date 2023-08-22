@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Reserva de Viagem</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Reserva de Viagem</legend>
+
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label>Serviços Desejados:</label>
+                <select name="servicos" required>
+                    <option value="Passagens">Compra de Passagens</option>
+                    <option value="Hospedagem">Reserva de Hospedagem</option>
+                    <option value="Veiculos">Aluguel de Veículos</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Forma de Pagamento:</label>
+                <input type="radio" id="cartao" name="pagamento" value="Cartão de Crédito" required>
+                <label for="cartao">Cartão de Crédito</label>
+
+                <input type="radio" id="boleto" name="pagamento" value="Boleto" required>
+                <label for="boleto">Boleto</label>
+
+                <input type="radio" id="pix" name="pagamento" value="PIX" required>
+                <label for="pix">PIX</label>
+            </div>
+
+            <div>
+                <label>Prazo de Pagamento:</label>
+                <select name="prazo" required>
+                    <option value="Vista">À Vista</option>
+                    <option value="5Vezes">Cinco Vezes Sem Juros</option>
+                    <option value="10Vezes">Dez Vezes Com Juros</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="observacoes">Observações:</label>
+                <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar Reserva">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
