@@ -60,7 +60,7 @@ table tr:nth-child(odd){
 #impressões .figure figure{
     display: inline-block;
 }
-#impressões .figure, #impressões .video{
+#impressões .video{
     text-align: center;
 }
-#
+
