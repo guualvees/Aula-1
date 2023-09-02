@@ -10,17 +10,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Pagina Inicial</a></li>
-                <li><a href="#">Lista de Animes</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
+    <header class="container-fluid p-2 bg-yeallow text-center">
+        <nav class="navbar navbar-expand-lg bg-body-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Animes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end bg-yeallow" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Animes Legendados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Animes Dublados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <h1>Vamos falar de animes ?</h1>
     </header>
-    <section id="impressões">
+    <section class="container-fluid text-center">
         <h2>Pirmeiras impressões</h2>
         <p>Anime é o nome que se dá às animações japonesas, geralmente desenhadas à mão, e produzidas como séries. A
             maioria dos animes conta com um número extenso de episódios, mas sua duração é bem mais curta: são raros os
@@ -52,7 +67,7 @@
         </video>
         </div>
     </section>
-     <section>
+     <section class="container-fluid text-bg-secondary">
         <h2>Lista de Animes</h2>
         <p>Veja o número de episódios dublados e legendados</p>
         <table border>
@@ -95,12 +110,14 @@
             </tbody>
         </table>
     </section>
-    <section>
+    <section class="container-fluid bg-light">
         <h4></h4>
         <form method="get" action="">
             <fieldset>
                 <legend>Dados De Contato</legend>
-                <label>Nome</label><br>
+                <div class="mb-3">
+                 <label class="form-label" for="nome">
+                </div>
                 <input type="text" name="nome"><br>
                 <label>Email</label> <br>
                 <input type="email" name="email"><br>
@@ -124,7 +141,7 @@
             <button>Salvar</button><br>
         </form>
     </section>
-    <footer>
+    <footer class="container-fluid bg-danger">
         <p>Desenvolvido por Gustavo Alves</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

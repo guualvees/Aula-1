@@ -1,11 +1,3 @@
-body{
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    line-height: 2.2en;
-    color:black;
-    margin: 0;
-}
 header{
     background-color:yellow;
 }
@@ -24,25 +16,6 @@ h2{
     color: black;
     font-weight: 700;
 }
-nav li a{
-    padding: 10px;
-    color: black;
-    text-decoration: none;
-}
-nav li{
-    float: left;
-}
-nav ul{
-    float: right;
-    list-style: none;
-}
-nav{
-    font-size: 15px;
-    letter-spacing: 4px;
-    height: 10px;
-    background-color: yellow;
-    padding-right: 40px;
-}
 table{
     width: 100%;
     color: white;
@@ -52,10 +25,10 @@ table td{
     padding: 5px;
 }
 table tr:nth-child(even){
-    background-color: blue; 
+    background-color: rgb(18, 17, 17); 
 }
 table tr:nth-child(odd){
-    background-color: darkblue;
+    background-color: rgb(18, 17, 17);
 }
 #impressões .figure figure{
     display: inline-block;
